@@ -26,10 +26,51 @@
 
     <main>
         <h1>Customer Reviews</h1>
-        <div class="review">
-            <h2>Customer Name</h2>
-            <p>Review text goes here.</p>
-        </div>
+
+        <section>
+            <h2>Submit Your Review</h2>
+            <form action="submit-review.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="product">Product:</label>
+                <input type="text" id="product" name="product" required>
+                
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+                
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+                
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Featured Reviews</h2>
+            <div class="review">
+                <p><strong>Jane Doe</strong> - <em>Smartwatch</em></p>
+                <p>"This smartwatch has changed my life! I love tracking my fitness and staying connected."</p>
+                <p>⭐️⭐️⭐️⭐️⭐️</p>
+            </div>
+            <div class="review">
+                <p><strong>John Smith</strong> - <em>Wireless Earbuds</em></p>
+                <p>"Excellent sound quality and super comfortable. Highly recommend!"</p>
+                <p>⭐️⭐️⭐️⭐️</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Average Ratings</h2>
+            <p><strong>Smartwatch:</strong> ⭐️⭐️⭐️⭐️⭐️ (20 reviews)</p>
+            <p><strong>Wireless Earbuds:</strong> ⭐️⭐️⭐️⭐️⭐️ (15 reviews)</p>
+        </section>
     </main>
 
     <footer>
