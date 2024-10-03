@@ -13,7 +13,7 @@ h1, h2, h3 {
 }
 
 /* Header Styles */
-header {
+header#main-header {
     background-color: #005580; /* Rich teal color for the header */
     color: white;
     padding: 20px; /* Increased padding for better spacing */
@@ -161,6 +161,14 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Footer Links */
+div#footer-links {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #003366; /* Darker blue for footer links */
+    border-radius: 5px;
 }
 
 /* Responsive Styles */
