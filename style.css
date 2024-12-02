@@ -6,3 +6,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background: linear-gradient(45deg, #ff007f, #ff9f00, #fffb00);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    color: #333; /* Dark text */
+    text-shadow: none;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #333; /* Added borders around headings */
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
