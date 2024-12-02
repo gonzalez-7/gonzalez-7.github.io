@@ -1,148 +1,148 @@
 /* Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Removes default margin for all elements */
+    padding: 0; /* Removes default padding for all elements */
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    font-family: 'Roboto', sans-serif; /* Sets a consistent font across the site */
 }
 
 body {
-    background: linear-gradient(45deg, #ff007f, #ff9f00, #fffb00);
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-    font-size: 16px;
+    background: linear-gradient(45deg, #ff007f, #ff9f00, #fffb00); /* Creates a diagonal gradient background */
+    color: #333; /* Sets default text color to dark gray */
+    line-height: 1.6; /* Improves readability by increasing line spacing */
+    padding: 20px; /* Adds padding around the body content */
+    font-size: 16px; /* Sets the base font size */
 }
 
 h1, h2, h3 {
-    color: #333; /* Dark text */
-    text-shadow: none;
-    font-weight: bold;
-    padding: 10px;
-    border: 2px solid #333; /* Added borders around headings */
-    border-radius: 5px;
-    margin: 10px 0;
+    color: #333; /* Ensures headings have dark text for readability */
+    text-shadow: none; /* Removes any default text shadow */
+    font-weight: bold; /* Makes text bold */
+    padding: 10px; /* Adds padding inside the heading box */
+    border: 2px solid #333; /* Adds a border around each heading */
+    border-radius: 5px; /* Rounds the corners of the border */
+    margin: 10px 0; /* Adds space above and below headings */
 }
 
 /* Header */
 header h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-    text-align: center;
+    font-size: 3em; /* Sets a large font size for the main heading */
+    margin-bottom: 0.5em; /* Adds space below the main heading */
+    text-align: center; /* Centers the text */
 }
 
 header h2 {
-    font-size: 1.8em;
-    text-align: center;
+    font-size: 1.8em; /* Sets a smaller font size for subheadings */
+    text-align: center; /* Centers the text */
 }
 
 /* Navigation Links */
 nav a {
-    color: #333; /* Dark text */
-    font-size: 1.2em;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    background-color: #4a90e2;
-    border-radius: 3px;
-    transition: all 0.3s ease;
-    margin: 5px;
-    border: 2px solid #333; /* Added border to the links */
+    color: #333; /* Sets link text color to dark gray */
+    font-size: 1.2em; /* Increases font size for better visibility */
+    font-weight: bold; /* Makes links bold */
+    text-decoration: none; /* Removes underline from links */
+    padding: 0.5em 1em; /* Adds padding inside the link */
+    background-color: #4a90e2; /* Sets a blue background for links */
+    border-radius: 3px; /* Rounds the corners of the background */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    margin: 5px; /* Adds space around the links */
+    border: 2px solid #333; /* Adds a dark border around links */
 }
 
 nav a:hover {
-    background-color: #50e3c2;
-    transform: scale(1.1);
+    background-color: #50e3c2; /* Changes background color on hover */
+    transform: scale(1.1); /* Slightly enlarges the link on hover */
 }
 
 /* Layout using Flexbox */
 .page-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: flex; /* Enables a flexbox layout */
+    justify-content: space-between; /* Distributes child elements evenly with space between them */
+    flex-wrap: wrap; /* Allows child elements to wrap onto the next line if needed */
+    gap: 20px; /* Adds space between flex items */
 }
 
 .intro {
-    flex: 1 1 100%;
-    text-align: center;
-    border: 2px solid #333; /* Added border around the intro section */
-    padding: 20px;
-    border-radius: 10px;
+    flex: 1 1 100%; /* Makes the intro section full-width */
+    text-align: center; /* Centers the text inside the section */
+    border: 2px solid #333; /* Adds a border around the intro section */
+    padding: 20px; /* Adds space inside the intro section */
+    border-radius: 10px; /* Rounds the corners of the intro section */
 }
 
 .main {
-    flex: 2 1 70%;
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border: 2px solid #333; /* Added border around the main section */
+    flex: 2 1 70%; /* Sets the main content to take 70% of the container width */
+    background-color: #f7f7f7; /* Sets a light gray background */
+    padding: 20px; /* Adds padding inside the main content */
+    border-radius: 8px; /* Rounds the corners of the main content box */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+    border: 2px solid #333; /* Adds a border around the main section */
 }
 
 .sidebar {
-    flex: 1 1 25%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border: 2px solid #333; /* Added border around the sidebar */
+    flex: 1 1 25%; /* Allocates 25% of the width to the sidebar */
+    background-color: #fff; /* Sets a white background */
+    padding: 20px; /* Adds padding inside the sidebar */
+    border-radius: 8px; /* Rounds the corners of the sidebar */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+    border: 2px solid #333; /* Adds a border around the sidebar */
 }
 
 /* Footer */
 footer {
-    margin-top: 30px;
-    text-align: center;
-    border: 2px solid #333; /* Added border around the footer */
-    padding: 10px;
+    margin-top: 30px; /* Adds space above the footer */
+    text-align: center; /* Centers the text inside the footer */
+    border: 2px solid #333; /* Adds a border around the footer */
+    padding: 10px; /* Adds padding inside the footer */
 }
 
 footer a {
-    color: #333; /* Dark text */
-    font-weight: bold;
-    background-color: #8e44ad;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    margin: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 2px solid #333; /* Added border to footer links */
+    color: #333; /* Sets link text color to dark gray */
+    font-weight: bold; /* Makes footer links bold */
+    background-color: #8e44ad; /* Sets a purple background for links */
+    padding: 0.5em 1em; /* Adds padding inside the links */
+    border-radius: 5px; /* Rounds the corners of the links */
+    margin: 5px; /* Adds space around the links */
+    text-decoration: none; /* Removes underline from links */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    border: 2px solid #333; /* Adds a border around links */
 }
 
 footer a:hover {
-    background-color: #f39c12;
-    transform: scale(1.1);
+    background-color: #f39c12; /* Changes background color on hover */
+    transform: scale(1.1); /* Enlarges the link slightly on hover */
 }
 
 /* Grid Layout for Design Selection */
 .design-selection nav ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
+    display: grid; /* Enables grid layout for design selection items */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates responsive grid columns */
+    gap: 15px; /* Adds space between grid items */
 }
 
 .design-selection li {
-    background-color: #f3f3f3;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-    border: 2px solid #333; /* Added border around the design items */
+    background-color: #f3f3f3; /* Sets a light gray background */
+    padding: 15px; /* Adds padding inside list items */
+    border-radius: 8px; /* Rounds the corners of list items */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05); /* Adds a subtle shadow effect */
+    border: 2px solid #333; /* Adds a border around list items */
 }
 
 .design-selection a {
-    color: #333; /* Dark text */
-    font-size: 1.1em;
-    font-weight: bold;
+    color: #333; /* Sets link text color to dark gray */
+    font-size: 1.1em; /* Increases font size for better visibility */
+    font-weight: bold; /* Makes links bold */
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .page-wrapper {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stacks items vertically on smaller screens */
+        align-items: center; /* Centers items horizontally */
     }
 
     .sidebar {
-        margin-top: 20px;
+        margin-top: 20px; /* Adds space above the sidebar */
     }
 }
