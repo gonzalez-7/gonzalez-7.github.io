@@ -114,3 +114,23 @@ footer a:hover {
     transform: scale(1.1);
 }
 
+/* Grid Layout for Design Selection */
+.design-selection nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.design-selection li {
+    background-color: #f3f3f3;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border: 2px solid #333; /* Added border around the design items */
+}
+
+.design-selection a {
+    color: #333; /* Dark text */
+    font-size: 1.1em;
+    font-weight: bold;
+}
