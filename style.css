@@ -89,3 +89,28 @@ nav a:hover {
     border: 2px solid #333; /* Added border around the sidebar */
 }
 
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    border: 2px solid #333; /* Added border around the footer */
+    padding: 10px;
+}
+
+footer a {
+    color: #333; /* Dark text */
+    font-weight: bold;
+    background-color: #8e44ad;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #333; /* Added border to footer links */
+}
+
+footer a:hover {
+    background-color: #f39c12;
+    transform: scale(1.1);
+}
+
