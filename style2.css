@@ -1,161 +1,161 @@
 /* Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Removes all default margins */
+    padding: 0; /* Removes all default padding */
+    box-sizing: border-box; /* Ensures that padding and borders are included in element's total width and height */
+    font-family: 'Poppins', sans-serif; /* Sets the font for the entire page */
 }
 
 body {
-    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Cool blue gradient */
-    color: #f5f5f5; /* Light text for contrast */
-    line-height: 1.7;
-    padding: 20px;
-    font-size: 16px;
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Creates a smooth blue gradient background */
+    color: #f5f5f5; /* Sets light color for the text to contrast with the dark background */
+    line-height: 1.7; /* Adjusts line height for better readability */
+    padding: 20px; /* Adds padding around the body */
+    font-size: 16px; /* Sets the font size for better readability */
 }
 
 h1, h2, h3 {
-    color: #ffffff; /* White text for headings */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Soft text shadow for depth */
-    font-weight: 600;
-    margin: 10px 0;
+    color: #ffffff; /* Sets the color of all headings to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a soft shadow to headings for depth */
+    font-weight: 600; /* Makes headings semi-bold */
+    margin: 10px 0; /* Adds vertical margin to space out the headings */
 }
 
 header h1 {
-    font-size: 3.5em;
-    text-align: center;
-    letter-spacing: 2px;
+    font-size: 3.5em; /* Increases font size for the main title */
+    text-align: center; /* Centers the title horizontally */
+    letter-spacing: 2px; /* Adds spacing between letters to make the title more prominent */
 }
 
 header h2 {
-    font-size: 2em;
-    text-align: center;
-    font-style: italic;
+    font-size: 2em; /* Sets font size for the subtitle */
+    text-align: center; /* Centers the subtitle horizontally */
+    font-style: italic; /* Makes the subtitle italic */
 }
 
 /* Navigation Links */
 nav a {
-    color: #ffffff;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #4caf50; /* Vibrant green background */
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    display: inline-block;
-    margin: 5px;
+    color: #ffffff; /* Sets the text color of navigation links to white */
+    font-size: 1.1em; /* Slightly increases the font size for readability */
+    text-transform: uppercase; /* Makes all navigation links uppercase */
+    text-decoration: none; /* Removes the underline from links */
+    padding: 10px 20px; /* Adds padding inside the link */
+    background-color: #4caf50; /* Adds a green background to links */
+    border-radius: 50px; /* Gives the links rounded corners */
+    transition: all 0.3s ease; /* Smooth transition effect for hover states */
+    display: inline-block; /* Makes the links inline-block elements */
+    margin: 5px; /* Adds small space around the links */
 }
 
 nav a:hover {
-    background-color: #81c784; /* Softer green on hover */
-    transform: translateY(-3px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #81c784; /* Changes background color on hover to a lighter green */
+    transform: translateY(-3px); /* Slightly lifts the link when hovered */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow around the link on hover */
 }
 
 /* Flexbox Layout */
 .page-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: flex; /* Applies flexbox to the container */
+    justify-content: space-between; /* Distributes space between flex items */
+    flex-wrap: wrap; /* Allows items to wrap onto new lines */
+    gap: 20px; /* Adds space between the flex items */
 }
 
 .intro {
-    flex: 1 1 100%;
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    border: 2px solid #ffffff;
+    flex: 1 1 100%; /* Makes the intro section take up full width on smaller screens */
+    text-align: center; /* Centers the content inside the intro section */
+    padding: 20px; /* Adds padding inside the intro section */
+    background: rgba(0, 0, 0, 0.2); /* Adds a semi-transparent black background */
+    border-radius: 10px; /* Rounds the corners of the intro section */
+    border: 2px solid #ffffff; /* Adds a white border around the intro section */
 }
 
 .main {
-    flex: 2 1 70%;
-    background-color: #ffffff;
-    color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    border: 2px solid #4caf50;
+    flex: 2 1 70%; /* Makes the main content take up 70% of the width */
+    background-color: #ffffff; /* Sets the background color to white */
+    color: #333; /* Sets the text color to dark gray */
+    padding: 20px; /* Adds padding inside the main content */
+    border-radius: 10px; /* Rounds the corners of the main content */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow around the main content */
+    border: 2px solid #4caf50; /* Adds a green border around the main content */
 }
 
 .sidebar {
-    flex: 1 1 25%;
-    background-color: #2a5298;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #ffffff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    flex: 1 1 25%; /* Makes the sidebar take up 25% of the width */
+    background-color: #2a5298; /* Sets the background color to a deep blue */
+    color: #ffffff; /* Sets text color to white */
+    padding: 20px; /* Adds padding inside the sidebar */
+    border-radius: 10px; /* Rounds the corners of the sidebar */
+    border: 2px solid #ffffff; /* Adds a white border around the sidebar */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow around the sidebar */
 }
 
 /* Footer */
 footer {
-    margin-top: 30px;
-    text-align: center;
-    padding: 15px;
-    background: #1e3c72;
-    border-radius: 5px;
+    margin-top: 30px; /* Adds space above the footer */
+    text-align: center; /* Centers the content inside the footer */
+    padding: 15px; /* Adds padding inside the footer */
+    background: #1e3c72; /* Sets the background color to a dark blue */
+    border-radius: 5px; /* Rounds the corners of the footer */
 }
 
 footer a {
-    color: #4caf50;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 8px 16px;
-    background: #ffffff;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    color: #4caf50; /* Sets the color of footer links to green */
+    font-weight: bold; /* Makes footer links bold */
+    text-decoration: none; /* Removes the underline from footer links */
+    padding: 8px 16px; /* Adds padding inside the footer links */
+    background: #ffffff; /* Sets the background of footer links to white */
+    border-radius: 5px; /* Rounds the corners of footer links */
+    transition: all 0.3s ease; /* Smooth transition effect for hover states */
 }
 
 footer a:hover {
-    background-color: #81c784;
-    color: #ffffff;
-    transform: scale(1.1);
+    background-color: #81c784; /* Changes background color on hover to a lighter green */
+    color: #ffffff; /* Changes text color to white when hovered */
+    transform: scale(1.1); /* Slightly enlarges the link on hover */
 }
 
 /* Grid Layout */
 .design-selection nav ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    list-style: none;
-    padding: 0;
+    display: grid; /* Applies grid layout to the design selection list */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Makes the grid responsive with flexible column widths */
+    gap: 20px; /* Adds space between the grid items */
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes padding from the list */
 }
 
 .design-selection li {
-    background: #ffffff;
-    color: #333;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    background: #ffffff; /* Sets the background color of list items to white */
+    color: #333; /* Sets text color to dark gray */
+    padding: 15px; /* Adds padding inside the list items */
+    border-radius: 8px; /* Rounds the corners of list items */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow around the list items */
+    transition: transform 0.3s ease; /* Smooth transition effect for hover */
 }
 
 .design-selection li:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Lifts the list item when hovered */
 }
 
 .design-selection a {
-    color: #2a5298;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #2a5298; /* Sets the color of the link to a blue shade */
+    font-weight: bold; /* Makes the link bold */
+    text-decoration: none; /* Removes the underline from the link */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 .design-selection a:hover {
-    color: #4caf50;
+    color: #4caf50; /* Changes the link color to green on hover */
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .page-wrapper {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stacks the content vertically on smaller screens */
+        align-items: center; /* Centers the items within the flex container */
     }
 
     .sidebar {
-        margin-top: 20px;
+        margin-top: 20px; /* Adds space above the sidebar on small screens */
     }
 }
